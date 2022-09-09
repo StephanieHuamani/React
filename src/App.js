@@ -5,7 +5,7 @@ const App = () => {
   return (
     <>
     <Navbar />
-    <Section greeting="Todos los productos" />
+    <Section greeting="Carrito" />
     </>
   );
 }

@@ -1,6 +1,12 @@
+import Btn from "./counter";
 const Section = (props) => {
-    return (
+    const onAdd = (cantidad) =>{
+        console.log(`Agregas ${cantidad} a tu carrito`)
+    }
+    return (<>
         <h1>{props.greeting}</h1>
+        <Btn onAdd={onAdd}/>
+        </>
     )
 }
 
