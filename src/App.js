@@ -1,11 +1,13 @@
-import Navbar from "./componentes/Nav";
-import Section from "./componentes/itemListContainer";
+import Navbar from "./componentes/Navbar";
+import Section from "./componentes/Section";
+import ItemListContainer from "./containers/ItemListContainer";
 
 const App = () => {
   return (
     <>
     <Navbar />
-    <Section greeting="Carrito" />
+    <Section greeting="Todos los productos" />
+    <ItemListContainer />
     </>
   );
 }

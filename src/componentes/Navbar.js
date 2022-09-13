@@ -3,19 +3,19 @@ import { IoIosCart } from "react-icons/io";
 const Navbar = () =>{
     return (
         <>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-evenly">
+ <nav className="navbar navbar-expand-lg navbar-light bg-secondary d-flex justify-content-evenly">
   <ul className="nav nav-tabs">
     <li className="nav-item">
-      <a className="nav-link" href="index.html">Home</a>
+      <a className="nav-link text-light" href="index.html">Home</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Cuadernos</a>
+      <a className="nav-link text-light" href="#">Cuadernos</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link" href="#">Librería</a>
+      <a className="nav-link text-light" href="#">Librería</a>
     </li>
     <li className="nav-item">
-      <a className="nav-link">Artistica</a>
+      <a className="nav-link text-light">Artistica</a>
     </li>
   </ul>
   <IoIosCart />
