@@ -29,3 +29,13 @@ text-align: center;
   width: 100px;
   height: 80px;
 }
+
+.divItemContainer{
+  width: 85%;
+  height: 90%;
+}
+
+.itemTitle{
+  display: flex;
+  justify-content: center;
+}

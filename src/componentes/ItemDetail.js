@@ -7,18 +7,21 @@ const ItemDetail = ({item}) => {
   }
   return (
     <>
-    {
-            <div className="card" alt="itemosLibreria">
-            <img className="img" src={item.img}/>
-            <div className="cardBody">
-            <h2 className="cardTitle">{item.title}</h2>
-            <p className="cardText">${item.price}</p>
-            <Btn onAdd={onAdd} />
-            </div>
-</div>
-    }
-    </>
-  )
+    <h2 className="itemTitle">{item.title}Titulo</h2>
+    <div className="divItemContainer">
+        <div className="itemImg">
+          <img src={item.img} alt=""/>
+        </div>
+
+        <div className="itemInfoContainer">
+            <p className="pItemDescription">Detalle del producto:{item.description}</p>
+            <p className="pItemStock">Tenemos {item.stock} unidades en stock</p>
+            <p className="pItemPrice">{item.price}</p>
+            <Btn onAdd={onAdd}/>
+        </div>
+      </div>
+      </>
+)
 }
 
 export default ItemDetail;

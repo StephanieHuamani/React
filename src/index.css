@@ -80,3 +80,31 @@ body{
   font-weight: 500;
   color: white;
 }
+
+/* Inicio de detalle del producto*/
+
+.divItemContainer{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8%;
+}
+
+.itemTitle{
+  display: flex;
+  justify-content: center;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  text-align: center;
+  color: #2980b9;
+}
+
+.itemImg{
+  width: 450px;
+  height: 450px;
+}
+
+.pItemDescription{
+  margin-right: 10%;
+}
