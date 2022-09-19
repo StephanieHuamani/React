@@ -7,17 +7,17 @@ const ItemDetail = ({item}) => {
   }
   return (
     <>
-    <h2 className="itemTitle">{item.title}Titulo</h2>
+    <h2 className="itemTitle">{item.title}</h2>
     <div className="divItemContainer">
-        <div className="itemImg">
-          <img src={item.img} alt=""/>
+        <div className="divItemImg">
+          <img src={item.img} alt="" className="itemImg"/>
         </div>
 
         <div className="itemInfoContainer">
-            <p className="pItemDescription">Detalle del producto:{item.description}</p>
+            <p className="pItemDescription">Detalle del producto: {item.description}</p>
             <p className="pItemStock">Tenemos {item.stock} unidades en stock</p>
-            <p className="pItemPrice">{item.price}</p>
-            <Btn onAdd={onAdd}/>
+            <p className="cardText">$ {item.price}</p>
+            <div><Btn onAdd={onAdd}/></div>
         </div>
       </div>
       </>

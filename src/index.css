@@ -86,9 +86,9 @@ body{
 .divItemContainer{
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 8%;
+  gap: 5%;
 }
 
 .itemTitle{
@@ -100,11 +100,21 @@ body{
   color: #2980b9;
 }
 
+.divItemImg, .itemInfoContainer{
+  width: 40%;
+  height: 45%;
+}
+
 .itemImg{
-  width: 450px;
+  width: 400px;
   height: 450px;
 }
 
-.pItemDescription{
-  margin-right: 10%;
+.itemInfoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 400px;
+  height: 450px;
 }
