@@ -4,22 +4,19 @@ import { Link } from "react-router-dom";
 const Navbar = () =>{
     return (
         <>
- <nav className="navbar navbar-expand-lg navbar-light bg-secondary d-flex justify-content-evenly">
-  <ul className="nav nav-tabs">
-    <li className="nav-item">
-      <Link to="/">Home</Link>
-    </li>
-    <li className="nav-item">
-      <Link to="/category/Cuaderno">Cuadernos</Link> 
-    </li>
-    <li className="nav-item">
-      <Link to="/category/Librería">Librería</Link>
-    </li>
-    <li className="nav-item">
-      <Link to="/category/Escritura">Escritura</Link>
-    </li>
-  </ul>
-  <IoIosCart />
+ <nav className="navbar">
+  <div>
+    <img alt="logo" src="http://d3ugyf2ht6aenh.cloudfront.net/stores/891/147/themes/common/logo-1846906730-1657206055-405949e6552c3c55495b051e8d8487441657206055.jpg?0" className="imgNavbar"/>
+  </div>
+
+  <div className="containerNavbar">
+      <Link to="/" className="aLink">Home</Link>
+      <Link to="/category/Cuaderno" className="aLink">Cuadernos</Link> 
+      <Link to="/category/Librería" className="aLink">Librería</Link>
+      <Link to="/category/Escritura" className="aLink">Escritura</Link>
+  </div>
+  
+  <div className="cartNavbar"><IoIosCart /></div>
 </nav>
         </>
     );

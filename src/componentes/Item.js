@@ -14,7 +14,7 @@ const Item = ({product}) => {
                 <h2 className="cardTitle">{product.title}</h2>
                 <p className="cardText">${product.price}</p>
                 <Btn onAdd={onAdd} />
-                <Link to={`/detalle/${product.id}`}><p>Ver detalle del producto</p></Link>
+                <Link to={`/detalle/${product.id}`}><button className='detalleProducto'>Ver detalle del producto</button></Link>
                 </div>
     </div>
   )

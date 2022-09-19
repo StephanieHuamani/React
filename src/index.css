@@ -81,14 +81,25 @@ body{
   color: white;
 }
 
+.detalleProducto{
+  margin-top: 30px;
+  background-color:white ;
+  border: solid 1px #2980b9;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: large;
+  font-weight: 400;
+  color: #2980b9;
+}
+
 /* Inicio de detalle del producto*/
 
 .divItemContainer{
   margin-top: 30px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 8%;
+  gap: 5%;
 }
 
 .itemTitle{
@@ -100,11 +111,57 @@ body{
   color: #2980b9;
 }
 
+.divItemImg, .itemInfoContainer{
+  width: 40%;
+  height: 45%;
+}
+
 .itemImg{
-  width: 450px;
+  width: 400px;
   height: 450px;
 }
 
-.pItemDescription{
-  margin-right: 10%;
+.itemInfoContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:flex-start;
+  width: 400px;
+  height: 450px;
+}
+
+/* Inicio de navbar*/
+.navbar{
+  border-bottom: solid 5px #2980b9 ;
+}
+
+.containerNavbar{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 20%;
+}
+
+.aLink{
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.aLink:hover{
+  border:double;
+  color: aliceblue;
+  background-color: #2980b9;
+}
+
+.imgNavbar{
+  margin-inline-start: 25%;
+  width: 75px;
+  height: 25px;
+}
+
+.cartNavbar{
+  margin-inline-end: 2%;
 }
