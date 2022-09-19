@@ -1,5 +1,6 @@
 import React from 'react'
 import Btn from './utils/counter';
+import { Link } from 'react-router-dom';
 
 const Item = ({product}) => {
   const onAdd = (cantidad) =>{
@@ -13,6 +14,7 @@ const Item = ({product}) => {
                 <h2 className="cardTitle">{product.title}</h2>
                 <p className="cardText">${product.price}</p>
                 <Btn onAdd={onAdd} />
+                <Link to={`/detalle/${product.id}`}><p>Ver detalle del producto</p></Link>
                 </div>
     </div>
   )

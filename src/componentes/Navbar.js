@@ -1,4 +1,5 @@
 import { IoIosCart } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Navbar = () =>{
     return (
@@ -6,16 +7,16 @@ const Navbar = () =>{
  <nav className="navbar navbar-expand-lg navbar-light bg-secondary d-flex justify-content-evenly">
   <ul className="nav nav-tabs">
     <li className="nav-item">
-      <a className="nav-link text-light" href="index.html">Home</a>
+      <Link to="/">Home</Link>
     </li>
     <li className="nav-item">
-      <a className="nav-link text-light" href="#">Cuadernos</a>
+      <Link to="/category/Cuaderno">Cuadernos</Link> 
     </li>
     <li className="nav-item">
-      <a className="nav-link text-light" href="#">Librería</a>
+      <Link to="/category/Librería">Librería</Link>
     </li>
     <li className="nav-item">
-      <a className="nav-link text-light">Artistica</a>
+      <Link to="/category/Escritura">Escritura</Link>
     </li>
   </ul>
   <IoIosCart />

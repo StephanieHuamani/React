@@ -53,9 +53,9 @@ const products = [
     },
     {
         id: 7,
-        title: "Planificador ",
+        title: "Planificador",
         price: 2540,
-        category: "Papelería",
+        category: "Librería",
         description: "Calendario mensual perchita colorful. Calendario mensual de pared ( anillado wire-o perchita). Todos los meses viene con: frase mensual, tracker de hábitos, feriados y fechas especiales , días con luna llena/luna nueva marcados. Ideal para ponerlo en un lugar bien a la vista, para visualizarlo diariamente. Con él, podrás aprovechar al máximo el tiempo y planificarte los próximos 12 meses. Ideal para dejar bien a la vista y recordar todas las fechas especiales, además de ser super útil le da color a tus espacios. Medidas : 30x40cm. 13 hojas full color. Hojas de 300g. Frase mensual. Feriados marcados. Luna llena/luna nueva. Tracker de hábitos. Impresión: full color",
         stock: 21,
         img: "https://d3ugyf2ht6aenh.cloudfront.net/stores/891/147/products/planner-terrazo-con-iman1-f5df511c7e1f15cf0216307962604157-1024-1024.jpg",

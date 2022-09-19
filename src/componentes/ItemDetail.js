@@ -16,7 +16,7 @@ const ItemDetail = ({item}) => {
         <div className="itemInfoContainer">
             <p className="pItemDescription">Detalle del producto:{item.description}</p>
             <p className="pItemStock">Tenemos {item.stock} unidades en stock</p>
-            <p className="pItemPrice">{item.price}</p>
+            <p className="pItemPrice">${item.price}</p>
             <Btn onAdd={onAdd}/>
         </div>
       </div>
