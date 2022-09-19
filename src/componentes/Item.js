@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 const Item = ({product}) => {
   const onAdd = (cantidad) =>{
     setCart(true);
+    alert(`Agregas ${cantidad} producto/s a tu carrito`);
   }
 
   const [cart, setCart] = useState(false);
