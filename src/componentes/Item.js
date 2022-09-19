@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Btn from './utils/counter';
 import { Link } from 'react-router-dom';
 
 const Item = ({product}) => {
   const onAdd = (cantidad) =>{
-    alert(`Agregas ${cantidad} producto/s a tu carrito`)
+    setCart(true);
   }
+
+  const [cart, setCart] = useState(false);
 
   return (
     <div className="card">
@@ -13,8 +15,10 @@ const Item = ({product}) => {
                 <div className="cardBody">
                 <h2 className="cardTitle">{product.title}</h2>
                 <p className="cardText">${product.price}</p>
-                <Btn onAdd={onAdd} />
-                <Link to={`/detalle/${product.id}`}><p>Ver detalle del producto</p></Link>
+                {
+                  cart ? <Link to="/cart"><button className='button'>Ver Carrito</button></Link> : <Btn onAdd={onAdd}/>
+                  }
+                <Link to={`/detalle/${product.id}`}><button className='detalleProducto'>Ver detalle del producto</button></Link>
                 </div>
     </div>
   )
