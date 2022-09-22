@@ -21,7 +21,7 @@ const Item = ({product}) => {
                 <h2 className="cardTitle">{product.title}</h2>
                 <p className="cardText">${product.price}</p>
                 {
-                  cart ? <Link to="/cart"><button className='button'>Ver Carrito</button></Link> : <Btn onAdd={onAdd}/>
+                  cart ? <Link to="/cart"><button className='button'>Ver Carrito</button></Link> : <Btn stock={product.stock} initial={1} onAdd={onAdd}/>
                   }
                 <Link to={`/detalle/${product.id}`}><button className='detalleProducto'>Ver detalle del producto</button></Link>
                 </div>

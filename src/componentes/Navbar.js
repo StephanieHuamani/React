@@ -1,5 +1,5 @@
-import { IoIosCart } from "react-icons/io";
 import { Link } from "react-router-dom";
+import CartWidget from "./CartWidget";
 
 const Navbar = () =>{
     return (
@@ -15,8 +15,7 @@ const Navbar = () =>{
       <Link to="/category/Librería" className="aLink">Librería</Link>
       <Link to="/category/Escritura" className="aLink">Escritura</Link>
   </div>
-  
-  <div className="cartNavbar"><Link to="/cart"><IoIosCart /></Link></div>
+  <CartWidget/>
 </nav>
         </>
     );

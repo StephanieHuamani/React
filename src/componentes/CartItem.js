@@ -18,9 +18,10 @@ const CartItem = ({product}) => {
     </div>
     <div className='priceContainerCart'>
         <IoIosTrash onClick={() => removeItem(product.item.id)} className="iconDelete"/>
-        <p className='priceCart'>Subtotal: ${product.quantity * product.item.price}</p>
+        <p className='priceCart'>Precio: ${product.quantity * product.item.price}</p>
     </div>
     </div>
+
     </>
   )
 }
