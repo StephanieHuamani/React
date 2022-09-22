@@ -9,6 +9,44 @@ body{
   font-family: 'Nunito', sans-serif;
 }
 
+/* Inicio de navbar*/
+.navbar{
+  border-bottom: solid 5px #2980b9 ;
+}
+
+.containerNavbar{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 20%;
+}
+
+.aLink{
+  padding-right: 15px;
+  padding-left: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #2980b9;
+}
+
+.aLink:hover{
+  border:double;
+  color: aliceblue;
+  background-color: #2980b9;
+}
+
+.imgNavbar{
+  margin-inline-start: 25%;
+  width: 75px;
+  height: 25px;
+}
+
+.cartNavbar{
+  margin-inline-end: 2%;
+}
+
+/* Incio de Home*/
+
 .titulo{
   font-size: 3.5rem;
   font-weight: bolder;
@@ -132,38 +170,81 @@ body{
   height: 450px;
 }
 
-/* Inicio de navbar*/
-.navbar{
-  border-bottom: solid 5px #2980b9 ;
+/* Inicio del carrito*/
+
+.subtitleCart{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
-.containerNavbar{
+.btnContainerCart{
+  margin-top: 2%;
   display: flex;
   flex-direction:row;
   justify-content: center;
-  gap: 20%;
+  gap: 60%;
+  margin-bottom: 5%;
 }
 
-.aLink{
-  padding-right: 15px;
-  padding-left: 15px;
-  font-weight: 500;
-  text-decoration: none;
+.btnBorrarCarrito{
+  background-color: #2980b9;
+  border: solid 0;
+  padding: 5px 10px;
+  border-radius: 40px;
+  font-size: large;
+  font-weight: 600;
+  color: white;
+}
+
+.btnSeguirComprando{
+  background-color: white;
+  border: solid 2px #2980b9;
+  padding: 5px 10px;
+  border-radius: 40px;
+  font-size: large;
+  font-weight: 600;
   color: #2980b9;
 }
 
-.aLink:hover{
-  border:double;
-  color: aliceblue;
-  background-color: #2980b9;
+.iconDelete{
+  margin-inline-start: 30%;
+  width: 30px;
+  height: 30px;
 }
 
-.imgNavbar{
-  margin-inline-start: 25%;
-  width: 75px;
-  height: 25px;
+.containerCart{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin-inline-start: 3%;
+  gap: 3%;
+  width: 55%;
 }
 
-.cartNavbar{
-  margin-inline-end: 2%;
+.imgCart{
+  width: 90px;
+  height: 90px;
+  margin-top: 5px;
+}
+
+.infoContainerCart{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  width: 200px;
+  height: 100px;
+}
+
+.priceContainerCart{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.priceCart{
+  font-weight: 600;
 }

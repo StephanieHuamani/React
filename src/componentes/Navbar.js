@@ -16,7 +16,7 @@ const Navbar = () =>{
       <Link to="/category/Escritura" className="aLink">Escritura</Link>
   </div>
   
-  <div className="cartNavbar"><IoIosCart /></div>
+  <div className="cartNavbar"><Link to="/cart"><IoIosCart /></Link></div>
 </nav>
         </>
     );

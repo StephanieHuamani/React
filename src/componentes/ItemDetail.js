@@ -1,14 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Btn from './utils/counter';
 import { Link } from 'react-router-dom';
+import { CartContext } from './CartContext';
 
 const ItemDetail = ({item}) => {
-  const onAdd = (cantidad) =>{
-    setCart(true);
-    alert(`Agregas ${cantidad} producto/s a tu carrito`)
-  }
+  const { addItem } = useContext(CartContext);
 
   const [cart, setCart] = useState(false);
+  
+  const onAdd = (quantity) =>{
+    setCart(true);
+    alert(`Agregas ${quantity} producto/s a tu carrito`)
+    addItem(item, quantity)
+  }
 
   return (
     <>
