@@ -15,12 +15,12 @@ const ItemDetailContainer = () => {
       const firesoreFetch = async () => {
         let q
         const docSnap = await getDoc(q);
-        const idFromFirestore = docSnap.doc.filter(document=>({
+        const idFromFirestore = docSnap.doc.map(document=>({
           id: document.id,
           ...document.data()
         }))
         if (docSnap.exists()) {
-          q = query(doc(db, "products"), where("id", "==", idDetail))
+          q = query(doc(db, "products"), where("ID", "==", idDetail))
         } else{
           q = query(doc(db, "products"))
         }
