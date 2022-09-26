@@ -53,7 +53,7 @@ const products = [
     },
     {
         id: 7,
-        title: "Planificador ",
+        title: "Planificador",
         price: 2540,
         category: "Papelería",
         description: "Calendario mensual perchita colorful. Todos los meses viene con: frase mensual, tracker de hábitos, feriados y fechas especiales , días con luna llena/luna nueva marcados. Ideal para ponerlo en un lugar bien a la vista, para visualizarlo diariamente.  Medidas : 30x40cm. 13 hojas full color. Hojas de 300g. Frase mensual. Feriados marcados. Luna llena/luna nueva. Tracker de hábitos. Impresión: full color",
