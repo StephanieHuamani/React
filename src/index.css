@@ -233,6 +233,7 @@ body{
   flex-wrap: nowrap;
   justify-content: flex-start;
   margin-inline-start: 2%;
+  gap: 3%;
 }
 
 .imgCart{
