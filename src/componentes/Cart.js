@@ -7,7 +7,8 @@ import { db } from "./utils/firebaseConfig"
 
 const Cart = () => {
   const { cartList, cartClear, totalItemPrice, totalItemPriceWithShipping} = useContext(CartContext);
-  const createOrder = async () => {
+  const createOrder = async (e) => {
+    e.preventDefault()
     let order = {
       buyer:{
         name: "Stephanie Huamani",
@@ -15,21 +16,21 @@ const Cart = () => {
         email: "stefHuama@hotmail.com"
       },
       date: serverTimestamp(),
-      items: cartList.map(product => ({id: product.id, title: product.title, quantity: product.quantity, price: product.price})),
+      items: cartList.map(item => ({id: item.id, title: item.title, quantity: item.quantity, price: item.price})),
       total: totalItemPrice()
     }
 
-    const newOrderId = doc(collection(db, "orders"))
+    const newOrderId = doc(collection(db, "order"))
     await setDoc(newOrderId, order);
+    console.log(setDoc)
 
-    cartList.forEach( async (item) => {
+    cartList.forEach( async item => {
       const newListProducts = doc(db, "products", item.id);
       await updateDoc(newListProducts, {
         stock: increment(-item.quantity)
       });
     });
     cartClear();
-    alert ("Pedido realizado con exito. Su numero de orden es: " + newOrderId.id)
   }
 
   return (
