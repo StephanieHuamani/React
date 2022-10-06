@@ -8,7 +8,7 @@ const CartWidget = () => {
     const { totalItemIconCart } = useContext(CartContext)
 
   return (
-    <div className="iconNavbar"><Link to="/cart"><IoIosCart className="cartNavbar"/> <span className="iconTotalProductsCart">{totalItemIconCart() || ""}</span> </Link></div>
+    <div className="iconNavbar"><Link to="/cart"><IoIosCart className="cartNavbar"/></Link> <span className='iconTotalProductsCart' hidden={totalItemIconCart()===0}>{totalItemIconCart()}</span> </div>
   )
 }
 

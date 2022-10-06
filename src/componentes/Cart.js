@@ -8,11 +8,11 @@ import { db } from "./utils/firebaseConfig"
 const Cart = () => {
   const { cartList, cartClear, totalItemPrice, totalItemPriceWithShipping} = useContext(CartContext);
   const createOrder = async () => {
-    const itemsCart = cartList.map(item => ({
-      id: item.id,
-      title: item.title,
-      quantity: item.quantity,
-      price: item.price
+    const itemsCart = cartList.map(itemCart => ({
+      id: itemCart.item.id,
+      title: itemCart.item.title,
+      quantity: itemCart.quantity,
+      price: itemCart.item.price
     }))
     let order = {
       buyer:{
@@ -28,15 +28,13 @@ const Cart = () => {
     const newOrderId = doc(collection(db, "orders"))
     await setDoc(newOrderId, order);
 
-    cartList.forEach( async (item) => {
-      const updateStock = doc(db, "products", item.id);
+    cartList.forEach( async (itemCart) => {
+      const updateStock = doc(db, "products", itemCart.item.id);
       await updateDoc(updateStock, {
-        stock: increment(-item.quantity)
+        stock: increment(-itemCart.quantity)
       });
     })
     cartClear()
-
-    alert('Pedido realizado. Tu número de orden es:' + newOrderId.id)
   }
 
   return (
