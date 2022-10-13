@@ -3,7 +3,8 @@ import { CartContext } from './CartContext';
 import { Link } from 'react-router-dom';
 import CartItem from './CartItem';
 import { serverTimestamp, doc, setDoc, collection, updateDoc, increment } from 'firebase/firestore';
-import { db } from "./utils/firebaseConfig"
+import { db } from "./utils/firebaseConfig";
+import Swal from 'sweetalert2';
 
 const Cart = () => {
   const { cartList, cartClear, totalItemPrice, totalItemPriceWithShipping} = useContext(CartContext);
@@ -34,6 +35,13 @@ const Cart = () => {
         stock: increment(-itemCart.quantity)
       });
     })
+    Swal.fire({
+      icon: 'success',
+      title: 'Compra finalizada',
+      text: `Su número de orden es: ${newOrderId.id}`,
+      footer: '<p>¡Gracias por su compra!</p>'
+    })
+
     cartClear()
   }
 

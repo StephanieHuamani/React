@@ -8,18 +8,18 @@ import { db } from '../componentes/utils/firebaseConfig';
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
     const [loading, setLoading] = useState(false);
-    const {idDetail} = useParams();
+    const {id} = useParams();
 
     useEffect(() =>{
       setLoading(true);
       const firesoreFetchId = async () => {
-        const docSnap = await getDoc(doc(db, "products", idDetail));
-        return {idDetail: idDetail, ...docSnap.data()}
+        const docSnap = await getDoc(doc(db, "products", id));
+        return {id: id, ...docSnap.data()}
     }
     firesoreFetchId()
     .then(result => setData(result))
     .finally(() => setLoading(false))
-      }, [idDetail]);
+      }, [id]);
     
   return (
     <div>
