@@ -19,7 +19,6 @@ const ItemDetail = ({item}) => {
       style: {
         marginTop: "35px",
         color: "white",
-        background: "rgb(58,146,252)",
         background: "linear-gradient(90deg, rgba(58,146,252,1) 25%, rgba(41,128,185,1) 95%)",
       },
       }).showToast();

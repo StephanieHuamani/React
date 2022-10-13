@@ -1,10 +1,10 @@
 import Navbar from "./componentes/Navbar";
-import ItemListContainer from "./containers/ItemListContainer"
+import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import { BrowserRouter, Routes, Route,  } from "react-router-dom";
 import Cart from "./componentes/Cart";
 import CartContextProvider from "./componentes/CartContext";
-import "./componentes/utils/firebaseConfig"
+import "./componentes/utils/firebaseConfig";
 
 const App = () => {
   return (
