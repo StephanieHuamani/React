@@ -2,7 +2,7 @@
 # Librería Smile 😃
 
 Este proyecto tiene como finalidad plasmar lo aprendido en el curso de React dictado en CoderHouse.
-Mi entrega final es realizar un e-commerce de articulos de líbreria.
+Mi entrega final es realizar un e-commerce de artículos de líbreria.
 
 ## Comenzando 🚀
 Si queres ver el resultado final de mi proyecto, hace click [acá](https://libreria-smile.netlify.app/).
