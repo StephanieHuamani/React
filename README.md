@@ -16,7 +16,7 @@ En caso de que quieras descargarlo hace anda al boton "code" y hace click en "Do
 * JavaScript
 * React JS
 * NodeJS
-* Toastify
+* Toastify JS
 * SweetAlert 2
 * Firebase
 ## Autora ✒️
